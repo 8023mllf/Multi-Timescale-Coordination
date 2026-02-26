@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="controller_left">
+  <compiler angle="radian" meshdir="assets" texturedir="assets" autolimits="true"/>
+  <asset>
+    <mesh file="controller.obj"/>
+  </asset>
+  <default>
+    <material specular="0.5" shininess="0.25"/>
+    <default class="controller_visual">
+      <geom contype="0" conaffinity="0" group="2"/>
+    </default>
+  </default>
+  <worldbody>
+    <body name="controller_valve_left">
+      <geom type="box" size="0.01 0.001 0.001" rgba="1 0 0 0.5" pos="0.12 0 0" class="controller_visual"/>
+      <geom type="box" size="0.001 0.01 0.001" rgba="0 1 0 0.5" pos="0 0.12 0" class="controller_visual"/>
+      <geom type="box" size="0.001 0.001 0.01" rgba="0 0 1 0.5" pos="0 0 0.12" class="controller_visual"/>
+      <body pos="0 0.13 -0.015" euler="1.3021552 0.0052883 0.0361458">
+        <geom type="mesh" mesh="controller" class="controller_visual" rgba="0.1 0.1 0.1 0.5"/>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

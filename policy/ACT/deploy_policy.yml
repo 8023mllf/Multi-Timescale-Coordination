@@ -1,0 +1,50 @@
+# Basic experiment configuration
+task_name: null
+policy_name: ACT
+task_config: null
+ckpt_setting: null
+seed: 0
+instruction_type: unseen
+
+# ACT-specific arguments
+action_dim: 14
+kl_weight: 10.0
+chunk_size: 50
+hidden_dim: 512
+dim_feedforward: 3200
+temporal_agg: false 
+device: cuda:0
+
+# DETR parser args
+ckpt_dir: null
+policy_class: ACT
+num_epochs: 2000
+
+# Model training params
+position_embedding: sine
+lr_backbone: 0.00001
+weight_decay: 0.0001
+lr: 0.00001
+masks: false
+dilation: false
+backbone: resnet18
+nheads: 8
+enc_layers: 4
+dec_layers: 7
+pre_norm: false
+dropout: 0.1
+camera_names:
+  - cam_high
+
+# ===== DP (DemoSpeedUp Diffusion Policy) eval options =====
+# DP 模式下需要提供 diffusion_policy_cfg（就是你发的 image_aloha_diffusion_policy_cnn.yaml）
+diffusion_policy_cfg: null
+
+# DP 推理用哪个相机（deploy_policy.encode_obs 会提供 front_cam/head_cam/left_cam/right_cam）
+# 默认 front_cam（你环境里有 front_camera）
+dp_camera_key: front_cam
+
+# 如果你想把 DP 的 encoder 单独配置（可选，不配就用当前 yml 里同一套参数尝试构建）
+# dp_encoder: {}
+
+

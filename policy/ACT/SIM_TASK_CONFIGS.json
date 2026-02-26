@@ -1,0 +1,166 @@
+{
+    "sim_beat_block_hammer": {
+        "dataset_dir": "./processed_data/sim_beat_block_hammer/demo_clean",
+        "num_episodes": 50,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high"
+        ]
+    },
+    "sim_beat_block_hammer_2x": {
+        "dataset_dir": "./processed_data/sim_beat_block_hammer/demo_clean_2x",
+        "num_episodes": 45,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high"
+        ]
+    },
+    "sim_beat_block_hammer_1.5x": {
+        "dataset_dir": "./processed_data/sim_beat_block_hammer/demo_clean_1.5x",
+        "num_episodes": 45,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high"
+        ]
+    },
+    "sim_place_burger_fries": {
+        "dataset_dir": "./processed_data/sim_place_burger_fries/demo_clean",
+        "num_episodes": 50,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high"
+        ]
+    },
+    "sim_place_burger_fries_2x": {
+        "dataset_dir": "./processed_data/sim_place_burger_fries/demo_clean_2x",
+        "num_episodes": 50,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high"
+        ]
+    },
+    "sim_place_burger_fries_1.5x": {
+        "dataset_dir": "./processed_data/sim_place_burger_fries/demo_clean_1.5x",
+        "num_episodes": 50,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high"
+        ]
+    },
+    "sim_stack_bowls_three": {
+        "dataset_dir": "./processed_data/sim_stack_bowls_three/demo_clean",
+        "num_episodes": 50,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high"
+        ]
+    },
+    "sim_stack_bowls_three_2x": {
+        "dataset_dir": "./processed_data/sim_stack_bowls_three/demo_clean_2x",
+        "num_episodes": 50,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high"
+        ]
+    },
+    "sim_stack_bowls_three_1.5x": {
+        "dataset_dir": "./processed_data/sim_stack_bowls_three/demo_clean_1.5x",
+        "num_episodes": 50,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high"
+        ]
+    },
+    "sim_open_laptop": {
+        "dataset_dir": "./processed_data/sim_open_laptop/demo_clean",
+        "num_episodes": 50,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high"
+        ]
+    },
+    "sim_open_laptop_2x": {
+        "dataset_dir": "./processed_data/sim_open_laptop/demo_clean_2x",
+        "num_episodes": 45,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high"
+        ]
+    },
+    "sim_open_laptop_1.5x": {
+        "dataset_dir": "./processed_data/sim_open_laptop/demo_clean_1.5x",
+        "num_episodes": 45,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high"
+        ]
+    },
+    "sim_stack_blocks_two": {
+        "dataset_dir": "./processed_data/sim_stack_blocks_two/demo_clean",
+        "num_episodes": 50,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high"
+        ]
+    },
+    "sim_stack_blocks_two_2x": {
+        "dataset_dir": "./processed_data/sim_stack_blocks_two/demo_clean_2x",
+        "num_episodes": 50,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high"
+        ]
+    },
+    "sim_stack_blocks_two_1.5x": {
+        "dataset_dir": "./processed_data/sim_stack_blocks_two/demo_clean_1.5x",
+        "num_episodes": 50,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high"
+        ]
+    },
+    "sim_handover_block_2x": {
+        "dataset_dir": "./processed_data/sim_stack_blocks_two/demo_clean_2x",
+        "num_episodes": 50,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high"
+        ]
+    },
+    "sim_handover_block_1.5x": {
+        "dataset_dir": "./processed_data/sim_stack_blocks_two/demo_clean_1.5x",
+        "num_episodes": 50,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high"
+        ]
+    },
+    "sim_handover_block": {
+        "dataset_dir": "./processed_data/sim_handover_block/demo_clean",
+        "num_episodes": 50,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high"
+        ]
+    },
+    "sim-handover_block-demo_clean-50": {
+        "dataset_dir": "./processed_data/sim-handover_block/demo_clean-50",
+        "num_episodes": 50,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high",
+            "cam_right_wrist",
+            "cam_left_wrist"
+        ]
+    },
+    "sim-click_alarmclock-demo_clean-50": {
+        "dataset_dir": "./processed_data/sim-click_alarmclock/demo_clean-50",
+        "num_episodes": 50,
+        "episode_len": 1000,
+        "camera_names": [
+            "cam_high",
+            "cam_right_wrist",
+            "cam_left_wrist"
+        ]
+    }
+}

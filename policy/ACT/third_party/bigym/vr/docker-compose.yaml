@@ -1,0 +1,44 @@
+version: "3.9"
+services:
+  base:
+    build:
+      context: ..
+      dockerfile: vr/Dockerfile
+      args:
+        UID: ${UID}
+        GID: ${GID}
+        USER: ${USER}
+    image: docker-ubuntu-steamvr:latest
+    ulimits:
+      rtprio: 99
+    ipc: host
+    network_mode: host
+    privileged: true
+    user: ${USER}
+    environment:
+      - DISPLAY
+      - QT_X11_NO_MITSHM=1
+      - RCUTILS_COLORIZED_OUTPUT=1
+      - USER
+    volumes:
+      - ~/.ssh:${HOME}/.ssh:ro
+      - /dev:/dev
+      - /dev/dri  # Equivalent to unmounting /dev/dri; stops slow rendering within the container.
+      - ${PWD}/..:/home/${USER}/repos/ws/src/bigym
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+      - /usr/share/vulkan/icd.d:/usr/share/vulkan/icd.d:ro
+    working_dir: /home/${USER}/repos/ws/src/bigym
+    command: exit
+  dev:
+    extends: base
+    container_name: steamvr_dev_${COMPOSE_PROJECT_NAME}
+    command: /bin/bash
+    tty: true
+    stdin_open: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
